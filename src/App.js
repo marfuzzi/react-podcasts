@@ -1,15 +1,11 @@
 import React, { useContext } from 'react';
 import Item from './Item';
-import { ThemeContext, PodcastContext } from './app-context';
+import { ThemeContext, MeetupTextContext } from './context';
 
 const App = () => {
-  const podcast = useContext(PodcastContext);
-  const theme = useContext(ThemeContext);
-
   return (
-    <div className={`card ${theme}`}>
-      <Item label="Podcast">
-        <h4>{podcast}</h4>
+    <div className={`card`}>
+      <Item label={"Meetup"}>
       </Item>
     </div>
   );
